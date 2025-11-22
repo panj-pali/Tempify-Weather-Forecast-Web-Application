@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.container{
+    width: 400px;
+    height:min-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+
+}
+.search-box{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: rgb(202, 201, 215);
+    padding: 12px 16px ;
+    border-radius: 20px; 
+
+} 
+.search-box input::placeholder {
+    color: #000;
+}
+.search-box button{
+    height: 45px;
+    width: 54px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather-img{
+    width: 60%;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+
+}
+.temp{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+.description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weather-det{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.humdity, .wind{
+    display: flex;
+    align-items: center;
+}
+.humdity{
+    margin-left:20px ;
+}
+.wind{
+    margin-right: 10px;
+}
+i{
+    font-size: 35px;
+}
+.test{
+    margin-left: 10px;
+    font-size: 20px;
+    
+}
+span{
+      font-size: 20px;
+    font-weight: 600;
+}
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-not-found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end:20px ;
+}
